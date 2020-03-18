@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-us">
+{% include skeleton/head.html %}
+
+<body>
+    <div class="container-fluid mp-0">
+        <!-- HERO -->
+        <section id="hero" class="row wh-full d-flex justify-content-around align-items-center ">
+
+            <!-- IMAGE -->
+            <div class="hero-image d-none d-sm-block col-md-6 order-md-2 text-center">
+                <img class="img-fluid" src="https://via.placeholder.com/650" />
+            </div>
+            <!-- /IMAGE -->
+
+            <!-- TEXT-->
+            <div class="col-md-6 text-right">
+                <div class="hero-text">
+                    <h4>Hi, I am</h4>
+                    <h1>Giorgio Saffirio</h1>
+                    <h3 id="typewriter-subtext" style="font-weight: 600;"></h3>
+                </div>
+
+                <div class="hero-social">
+                    <a href="#TWITTER" target="_blank" title="Tweet">
+                        <i class="fab fa-twitter-square fa-2x" aria-hidden="true"></i>
+                        <span class="sr-only">Tweet</span>
+                    </a>
+
+                    <a href="#LINKEDIN" target="_blank" title="Tweet">
+                        <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+                        <span class="sr-only">Tweet</span>
+                    </a>
+
+                    <a href="mailto:#MAIL" target="_blank" title="Tweet">
+                        <i class="fas fa-envelope-square fa-2x" aria-hidden="true"></i>
+                        <span class="sr-only">Tweet</span>
+                    </a>
+                </div>
+            </div>
+            <!-- /TEXT -->
+        </section>
+        <!-- /HERO -->
+
+        <!-- ABOUT -->
+        <section id="about" class="content row d-flex justify-content-center">
+            <div class="col-md-5">
+                <img class="img-fluid" src="https://via.placeholder.com/650x450" />
+            </div>
+            <div class="col-md-5">
+                <h3>About Me</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas malesuada non est nec egestas.
+                    Ut volutpat augue nec ipsum ornare sodales eu vitae leo. Cras vulputate varius tellus, et dignissim
+                    sem lobortis in.
+                    Nullam vehicula dui eget risus tincidunt, eu fringilla massa aliquet. Sed diam nisl, dignissim a
+                    dictum ut, pellentesque quis mi.
+                    Pellentesque et efficitur enim, ut imperdiet purus.</p>
+            </div>
+        </section>
+        <!-- /ABOUT -->
+
+        <!-- WHAT AM I GOOD AT -->
+        <section id="waiga" class="content row d-flex justify-content-center">
+            {% include waiga/waiga-manager.html %}
+
+        </section>
+        <!-- /WHAT AM I GOOD AT -->
+        <!--EDUCATION AND EXPERIENCES -->
+        <section id="experiences" class="mt-5 content row d-flex justify-content-center">
+            <div class="col-lg-5">
+                {% include education/education-card-manager.html %}
+            </div>
+
+            <div class="col-lg-5">
+                {% include experiences/experiences-card-manager.html %}
+            </div>
+
+        </section>
+        <!-- /EDUCATION AND EXPERIENCES -->
+
+        <!-- SKILL -->
+        <section id="skills" class="content row d-flex justify-content-center">
+            <div class="col-lg-5 px-5 text-center">
+                {% include technical-skills/technical-skills-manager.html %}
+            </div>
+
+            <div class="col-lg-5 px-5  text-center">
+                {% include software-knowledge/icons/software-knowledge-manager.html %}
+            </div>
+
+        </section>
+        <!-- /SKILL-->
+
+        <!-- CONTACT  -->
+        <section id="contact" class="content row d-flex justify-content-center">
+
+            <div class="col-md-6">
+                <h3 class="text-center">Contact Me</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas malesuada non est nec egestas.
+                    Ut volutpat augue nec ipsum ornare sodales eu vitae leo. Cras vulputate varius tellus, et dignissim
+                    sem lobortis in.
+                    Nullam vehicula dui eget risus tincidunt, eu fringilla massa aliquet. Sed diam nisl, dignissim a
+                    dictum ut, pellentesque quis mi.
+                    Pellentesque et efficitur enim, ut imperdiet purus.</p>
+            </div>
+        </section>
+        <!-- /CONTACT -->
+
+        {% include skeleton/footer.html %}
+        <script src="{{site.url}}/assets/js/typewriter.js"></script>
+        <script>
+            var app = document.getElementById('typewriter-subtext');
+
+            var typewriter = new Typewriter(app, {
+                loop: false,
+                delay: 15
+            });
+
+            typewriter.typeString('Game Developer')
+                .pauseFor(1500)
+                .deleteAll()
+                .typeString('Tools Developer')
+                .pauseFor(1500)
+                .deleteAll()
+                .typeString('Gamer')
+                .pauseFor(1500)
+                .deleteAll()
+                .typeString('Guitarist')
+                .pauseFor(1500)
+                .deleteAll()
+                .typeString('Traveler')
+                .pauseFor(1500)
+                .deleteAll()
+                .typeString('Developer')
+                .start();</script>
+    </div>
+</body>
+
+</html>

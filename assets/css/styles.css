@@ -1,0 +1,207 @@
+/* 12px @ 320px increasing to 16px @ 1920px */
+@media (min-width: 320px) {
+  html {
+    font-size: calc(0.75rem + ((1vw - 3.2px) * 0.25));
+    /* Where: * 0.25 = 100 * font_Size_Difference / viewport_Width_Difference */
+  }
+  .hero-social {
+    font-size: 18px;
+  }
+
+  /*p{
+      font-size: 16px;
+  }*/
+}
+/* Prevent font scaling beyond this breakpoint */
+@media (min-width: 992px) {
+  html {
+    font-size: 16px;
+  }
+
+  .hero-social {
+    font-size: 20px;
+  }
+
+  .content {
+    padding: 6em 0 6em 0 !important;
+  }
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #333;
+}
+
+p {
+  margin-bottom: 1.25em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 2.75rem 0 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 7.594em;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 5.063em;
+}
+
+h3 {
+  font-size: 3.375em;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 2.25em;
+}
+
+h5 {
+  font-size: 1.5em;
+}
+
+a {
+  color: #35acff;
+  text-decoration: none;
+}
+
+small,
+.text_small {
+  font-size: 0.667em;
+}
+
+/* full page element */
+.wh-full {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* force removing margin and padding */
+.mp-0 {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+section {
+  margin: 0 !important;
+  padding: 1em;
+}
+
+.content {
+  padding: 1em;
+}
+.hero-social {
+  margin-top: 3em;
+}
+
+/* Time line only */
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+
+ /* Timeline vertical line */
+ul.timeline:before {
+    content: ' ';
+    background: #efefef;
+    display: inline-block;
+    position: absolute;
+    left: 17px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+    border-radius: 1rem;
+}
+
+li.timeline-item {
+    margin: 20px 0;
+}
+
+/* Timeline item circle marker */
+li.timeline-item::before {
+    content: ' ';
+    background: #ddd;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #ddd;
+    left: 11px;
+    width: 14px;
+    height: 14px;
+    z-index: 400;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Progress Bar */
+.prog
+{
+    text-align: center;
+    max-width: 50vh;
+    margin: 35px auto;
+}
+.prog-info
+{
+    position: relative;
+    padding: 3px 0 25px 0 ;
+}
+
+.prog-title
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 600;
+}
+
+.prog-percent
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: 300;
+}
+
+.chart-text {
+  font-size: 16px;
+  /*font: 16px/1.4em "Montserrat", Arial, sans-serif;*/
+  fill: #000;
+  -moz-transform: translateY(0.15em);
+  -ms-transform: translateY(0.15em);
+  -webkit-transform: translateY(0.15em);
+  transform: translateY(0.15em);
+}
+.chart-number {
+  font-size: 0.25em;
+  text-anchor: middle;
+  -moz-transform: translateY(-0.5em);
+  -ms-transform: translateY(-0.5em);
+  -webkit-transform: translateY(-0.5em);
+  transform: translateY(-0.5em);
+}
+.chart-label {
+  font-size: 0.18em;
+  text-transform: uppercase;
+  text-anchor: middle;
+  -moz-transform: translateY(1em);
+  -ms-transform: translateY(1em);
+  -webkit-transform: translateY(1em);
+  transform: translateY(1em);
+}
+
+.card
+{
+  margin: 0.8em;
+}

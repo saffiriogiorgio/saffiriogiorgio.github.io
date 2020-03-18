@@ -1,0 +1,29 @@
+- name: Unity
+  label: Expert
+  custom-icon: false
+  icon: "fab fa-unity" 
+
+- name: Unreal Engine 4
+  label: Intermediate
+  custom-icon: true
+  icon: "https://img.icons8.com/ios/100/000000/unreal-engine--v1.png"
+
+- name: Adobe Photoshop
+  label: Expert
+  custom-icon: true
+  icon: "../assets/img/brand-icons/adobe-photoshop-icon-grey.svg"
+
+- name: Godot Engine
+  label: Working Knowledge
+  custom-icon: true
+  icon: "../assets/img/brand-icons/godot-icon-grey.svg"
+
+- name: GameMaker 2
+  label: Intermediate
+  custom-icon: true
+  icon: "../assets/img/brand-icons/GameMaker2icon.png"
+
+- name: Blender
+  label: Working Knowledge
+  custom-icon: true
+  icon: "../assets/img/brand-icons/blender-icon-grey.svg"

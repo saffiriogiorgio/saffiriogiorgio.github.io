@@ -1,0 +1,23 @@
+- name: C#
+  label: Expert
+  percentage: 100
+
+- name: Python
+  label: Intermediate
+  percentage: 70
+
+- name: Java
+  label: Intermediate
+  percentage: 70
+
+- name: C ++
+  label: Working Knowledge
+  percentage: 40
+
+- name: PHP
+  label: Expert
+  percentage: 100
+
+- name: Html / Css
+  label: Expert
+  percentage: 100

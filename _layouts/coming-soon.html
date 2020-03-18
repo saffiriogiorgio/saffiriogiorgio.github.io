@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Saffirio Giorgio Dev - Website</title>
+
+    <meta name="google" value="notranslate">
+    <!-- PLUGINS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{site.url}}/assets/css/styles.css">
+    <!-- FONT -->
+    <link type="text/css" rel="stylesheet"
+        href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans">
+    <!-- ICONS -->
+    <script src="https://kit.fontawesome.com/30454b29a2.js" crossorigin="anonymous"></script>
+
+    <meta name="HandheldFriendly" content="true">
+    <meta name="developer" content="Giorgio Saffirio">
+
+    <style>
+        .container-fluid {
+            background-color: #2a2a72;
+            background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid mp-0">
+        <section id="hero" class="row wh-full d-flex justify-content-around align-items-center ">
+
+            <!-- TEXT-->
+            <div class="text-center">
+                <div class="hero-text text-white">
+                    <h1>Coming Soon</h1>
+                </div>
+
+            </div>
+            <!-- /TEXT -->
+        </section>
+    </div>
+    {% include skeleton/footer.html %}
+
+    <script src="{{site.url}}/assets/js/jquery.gradientify.min.js"></script>
+    <script>
+        $('.container-fluid').gradientify({
+            angle: 275,
+            gradients: [
+                { start: [238, 192, 198], stop: [126, 232, 250] },
+                { start: [42, 42, 114], stop: [0, 159, 253] },
+                { start: [62, 173, 207], stop: [171, 233, 205] }
+            ]
+        });
+    </script>
+
+</body>
+
+</html>

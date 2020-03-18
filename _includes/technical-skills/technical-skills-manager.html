@@ -1,0 +1,24 @@
+<h3>Technical Skills</h3>
+
+{% for language in site.data.languages %}
+<!-- {{ language.name }} 1-->
+<div class="prog">
+    <div class="prog-info">
+        <div class="prog-title">{{ language.name }}</div>
+        <div class="prog-percent">{{ language.label }}</div>
+    </div>
+    <div class="progress" style="height: 5px;">
+        <div class="progress-bar" role="progressbar" style="width: 34%; background-color: #005073"
+            aria-valuenow="34" aria-valuemin="0" aria-valuemax="100"></div>
+        {%if language.percentage > 40 %}
+        <div class="progress-bar" role="progressbar" style="width: 34%;  background-color: #107dac;"
+            aria-valuenow="34" aria-valuemin="0" aria-valuemax="100"></div>
+        {%endif %}
+        {%if language.percentage > 70 %}
+        <div class="progress-bar" role="progressbar" style="width: 32%;  background-color: #189ad3;"
+            aria-valuenow="32" aria-valuemin="0" aria-valuemax="100"></div>
+        {%endif %}
+
+    </div>
+</div>
+{% endfor %}

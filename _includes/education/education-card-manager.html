@@ -1,0 +1,15 @@
+
+<h3 class="text-center ">Education</h3>
+
+<ul class="timeline">
+    {% for post in site.tags.education %}
+
+    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+        <h2 class="h4 my-0">{{ post.title }}</h2>
+
+        <span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>{{ post.date }}</span>
+
+        <p class="mt-2 ">{{ post.content }}</p>
+    </li>
+    {% endfor %}
+</ul>
